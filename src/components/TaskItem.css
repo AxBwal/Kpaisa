@@ -1,0 +1,51 @@
+
+
+.task-item {
+    display: grid;
+    grid-template-columns: 40px 1fr 100px; 
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease;
+  }
+  
+  .task-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .task-item input[type='checkbox'] {
+    margin: 0 auto; 
+    transform: scale(1.2);
+  }
+  
+  .task-item-title {
+    font-size: 16px;
+    color: #333;
+    margin-right: 20px;
+    word-wrap: break-word;
+  }
+  
+  .task-item-title.completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .task-item button {
+    justify-self: end; 
+    background-color: #ff4a4a;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-item button:hover {
+    background-color: #ff6b6b;
+  }
+  
+  .task-item button:focus {
+    outline: none;
+  }
+  
